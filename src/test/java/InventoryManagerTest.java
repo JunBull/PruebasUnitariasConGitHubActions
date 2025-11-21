@@ -85,4 +85,17 @@ public class InventoryManagerTest {
 
         Assertions.assertEquals(resultadoEsperado,inventory.getStock(nombreItem));
     }
+
+    @Test
+    public void usuarioAgregaItemNull(){
+        int cantidadItem = 5;
+
+        Exception exception = Assertions.assertThrows(IllegalArgumentException.class, ()->{
+            inventory.addItem(null,cantidadItem);
+        });
+
+        String mensaje = "El nombre del producto no puede estar vacío";
+
+        Assertions.assertEquals(mensaje,exception.getMessage());
+    }
 }
