@@ -56,7 +56,7 @@
                                     <limits>
                                         <limit>
                                             <counter>INSTRUCTION</counter>
-                                            <value>COVERED RATIO</value>
+                                            <value>COVEREDRATIO</value>
                                             <minimum>0.98</minimum> </limit>
                                     </limits>
                                 </rule>
